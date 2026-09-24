@@ -4,6 +4,7 @@
 */
 
 :root {
+  --font-family: "IBM Plex mono", monospace;
   /* темная версия */
   --bg-color: #000028;
   --text-color: #f1b2ce;
@@ -14,8 +15,7 @@
   --stroke-color: #ff0070;
   --stroke-color-soft: rgba(255, 0, 112, 0.4);
   --cover-image: url("../images/cover-image-dark.png");
-
-  /* мобильная версия */
+   /* мобильная версия */
   --page-padding: 10px;
   --section-gap: 50px;
   --main-padding-block: 40px;

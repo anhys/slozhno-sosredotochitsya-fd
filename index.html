@@ -43,10 +43,10 @@
         </ul>
       </nav>
       <h1 class="header__title">no focus</h1>
-      <p class="header__subtitle title-decor">
-        Что делать, когда не можешь делать ничего<br>Или почему нам так сложно
-        сконцентрироваться, особенно когда очень надо
-      </p>
+      <div class="header__subtitle title-decor">
+        <p>Что делать, когда не можешь делать ничего</p>
+        <p>Или почему нам так сложно сконцентрироваться, особенно когда очень надо</p>
+      </div>
     </header>
     <main class="content">
       <section class="section section_type_reasons">
@@ -173,33 +173,37 @@
       </section>
       <section class="section section_type_gallery">
         <h2 class="section__title title-decor">А можно в картинках?</h2>
+        <!-- ИЗМЕНЕНО (пункты 5–6): у изображений остался один нейтральный
+          класс элемента gallery__image; раскладка по сетке задаётся
+          порядком элементов через :nth-child в CSS, поэтому замена
+          или перестановка картинок не требует правок разметки -->
         <div class="gallery">
           <img
-            class="gallery__image gallery__image_type_sunset"
+            class="gallery__image"
             src="./images/sunset.png"
             alt="Фиолетово-розовый закат над горами и водной гладью"
             loading="lazy"
           >
           <img
-            class="gallery__image gallery__image_type_ice-cream"
+            class="gallery__image"
             src="./images/ice-cream.png"
             alt="Мультяшный кот с вишенкой сверху на фоне вазы с мороженым"
             loading="lazy"
           >
           <img
-            class="gallery__image gallery__image_type_tape"
+            class="gallery__image"
             src="./images/tape.png"
             alt="Аудиокассета в розово-фиолетовых тонах с элементами плеера"
             loading="lazy"
           >
           <img
-            class="gallery__image gallery__image_type_books"
+            class="gallery__image"
             src="./images/books.png"
             alt="Стопка книг с чашкой кофе на вершине"
             loading="lazy"
           >
           <img
-            class="gallery__image gallery__image_type_street"
+            class="gallery__image"
             src="./images/street.png"
             alt="Тихая улица в розовых тонах с домами и проводами"
             loading="lazy"
